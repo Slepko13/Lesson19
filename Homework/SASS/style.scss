@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    src: url('../Fonts/bebas_neue/BebasNeue\ Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Thin';
+    src: url('../Fonts/bebas_neue/BebasNeue\ Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Light';
+    src: url('../Fonts/bebas_neue/BebasNeue\ Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('../Fonts/bebas_neue/BebasNeue\ Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('../Fonts/bebas_neue/BebasNeue\ Book.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pricing {
+    background-color: #9789f9;
+    height: 150%;
+    border: 2px solid red;
+
+    @media only screen and (min-width:767px) {
+        height: 100vh;
+    }
+
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .wrap {
+
+            .col__2,
+            .col__1,
+            .col__3 {
+                position: relative;
+
+
+
+                &:hover {}
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                background-color: #f5f4f9;
+
+                box-sizing: content-box;
+
+
+                &:hover {}
+
+                &:hover .footer .button {
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+
+                    margin-right: -50%;
+                    transform: translate(-50%, 50%);
+                    box-shadow: 2px 4px 18px rgba(253, 141, 123, 0.31);
+                    border-radius: 27px;
+                    background-color: #fd8d7b;
+                }
+
+                &:hover .footer .hidden-text {
+                    display: block;
+                }
+
+
+                &:hover .header .price .circle1 {
+                    display: block;
+                }
+
+                &:hover .header .price .circle2 {
+                    display: block;
+                }
+
+                &:hover .header .price .circle3 {
+                    display: block;
+                }
+
+                &:hover .header .price .popular {
+                    @media only screen and (min-width:768px) {
+                        display: block;
+                    }
+
+
+                }
+
+                .header {
+
+
+
+                    .price {
+
+                        color: #181818;
+                        font-family: "Bebas Neue Thin";
+                        font-size: 60px;
+                        font-weight: thin;
+                        text-transform: uppercase;
+                        letter-spacing: 4.8px;
+
+                        margin-bottom: 25px;
+                        margin-top: 25px;
+
+                        .circle1 {
+                            position: absolute;
+                            right: 22px;
+                            top: 3px;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #fd8d7b;
+                            display: none;
+                        }
+
+                        .circle2 {
+                            position: absolute;
+                            right: 27px;
+                            top: 7px;
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background-color: #fd8d7b;
+                            display: none;
+                        }
+
+                        .circle3 {
+                            position: absolute;
+                            right: 37px;
+                            top: 12px;
+                            width: 46px;
+                            height: 46px;
+                            border-radius: 50%;
+                            background-color: #fd8d7b;
+                            display: none;
+                            color: #ffffff;
+                            font-family: "BebasNeue";
+                            font-size: 24px;
+                            font-weight: 400;
+                            text-transform: uppercase;
+
+                            .letter {
+                                margin: 0;
+                                position: absolute;
+                                top: 50%;
+                                left: 58%;
+                                margin-right: -40%;
+                                transform: translate(-50%, -50%);
+                                font-family: "Bebas Neue Regular";
+                            }
+                        }
+
+                        .popular {
+                            position: absolute;
+                            top: 22px;
+                            right: -70px;
+                            background: url("../Images/tooltip-bg.png") no-repeat center center;
+                            width: 110px;
+                            display: none;
+                            color: #ffffff;
+                            font-family: "Bebas Neue Regular";
+                            font-size: 16px;
+                            font-weight: 400;
+                            z-index: 12;
+                            text-transform: uppercase;
+                            letter-spacing: 1.28px;
+                        }
+
+
+
+
+                    }
+
+                    .dollar {
+
+                        vertical-align: text-top;
+                        color: #181818;
+                        font-family: "Bebas Neue Thin";
+                        font-size: 24px;
+                        font-weight: thin;
+                        line-height: 50px;
+                        text-transform: uppercase;
+                        letter-spacing: 1.92px;
+                    }
+
+                    .hr {
+                        color: #181818;
+                        font-family: "Bebas Neue Light";
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 36px;
+                        text-transform: uppercase;
+                        letter-spacing: 1.28px;
+                    }
+
+
+                }
+
+                .direction {
+                    color: #181818;
+                    font-family: "Bebas Neue Regular";
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.96px;
+                    margin-bottom: 70px;
+                }
+            }
+
+            .main {
+                background-color: #ffffff;
+                border-top-left-radius: 45%;
+                border-top-right-radius: 45%;
+                background-position: center;
+
+
+
+                .icon {
+                    margin-bottom: 40px;
+                    margin-top: 20px;
+
+                    .ti-palette,
+                    .ti-paint-bucket,
+                    .ti-hummer {
+                        width: 30px;
+                        height: 30px;
+                        color: #181818;
+                        font-family: themify;
+                        font-size: 30px;
+                        font-weight: 400;
+                        line-height: 36px;
+                        letter-spacing: 2.4px;
+                    }
+
+                }
+
+                .list {
+                    margin-bottom: 60px;
+                    color: #181818;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 53px;
+                    padding-left: 30%;
+                }
+            }
+
+            .footer {
+                position: relative;
+                min-height: 50px;
+
+                .hidden-text {
+
+                    display: none;
+                    color: #a9a9a9;
+                    font-family: Roboto;
+                    font-size: 11px;
+                    font-weight: 300;
+                    line-height: 53px;
+                }
+
+                .button {
+
+
+                    margin: 0;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, 50%);
+                    box-shadow: 2px 4px 18px rgba(133, 192, 247, 0.31);
+                    border-radius: 27px;
+                    background-color: #6fcffb;
+
+                    .text {
+                        color: #ffffff;
+                        font-family: "Bebas Neue Bold";
+                        font-size: 18px;
+                        font-weight: 700;
+                        letter-spacing: 1.44px;
+                    }
+                }
+            }
+        }
+
+    }
+}
